@@ -5,14 +5,15 @@ package zendesk.endwork;
 
 
 import org.zendesk.client.v2.Zendesk;
+import org.zendesk.client.v2.model.Ticket;
 
 public class App {
 
 
     public static void main(String[] args) {
-        Zendesk zd = new Zendesk.Builder("https://{{your domain}}.zendesk.com")
+        Zendesk zd = new Zendesk.Builder("https://z3n-pierre-stage.zendesk.com")
                 .setUsername("...")
-                .setToken("...")
+                .setPassword("...")
                 .build();
 
     }
